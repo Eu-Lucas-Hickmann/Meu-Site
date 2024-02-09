@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --text-color: white;
+  --bg-url: url(./assets/bg-mobile.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.1);
+  --surface-color: rgba(255, 255, 255, 0.1);
+  --surface-color-hover: rgba(255, 255, 255, 0.05);
+  --highlight-collor: rgba(255, 255, 255, 0.3);
+  --photo-perfil: white;
+  --thema: white;
+}
+.light {
+  --text-color: black;
+  --bg-url: url(./assets/bg-mobile-light.jpg);
+  --stroke-color: black;
+  --surface-color: rgba(0, 0, 0, 0.1);
+  --surface-color-hover: rgba(0, 0, 0, 0.05);
+  --highlight-collor: rgba(0, 0, 0, 0.3);
+  --photo-perfil: black;
+  --thema: black;
+}
+body {
+  background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
+}
+body * {
+  font-family: "Source Code Pro", monospace;
+  color: var(--text-color);
+}
+
+#conteiner {
+  width: 100%;
+  max-width: 600px;
+  margin: 25px auto 0px;
+  padding: 24px;
+}
+#fotoperfil {
+  text-align: center;
+  padding: 26px;
+  margin: 16px;
+}
+#fotoperfil img {
+  width: 115px;
+  border: 3px solid var(--photo-perfil);
+  border-radius: 100%;
+}
+#fotoperfil p {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 16px auto 0px;
+}
+#portifolio2 {
+  font-size: 15px;
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 24px 0px;
+}
+ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 24px;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  border-radius: 15px;
+  text-decoration: none;
+  font-weight: 300;
+  transition: background 0.2s;
+}
+ul li a:hover {
+  background: var(--surface-color-hover);
+  border: 1.5px solid grey;
+}
+#sociallinks {
+  display: flex;
+  padding: 24px 0px;
+  font-size: 20px;
+  justify-content: center;
+}
+#sociallinks a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  transition: background 0.2s;
+  border-radius: 50%;
+}
+#sociallinks a:hover {
+  background: var(--highlight-collor);
+}
+#buttonthema {
+  display: flex;
+  justify-content: end;
+  text-align: end;
+  padding: 5px;
+  margin: 16px;
+}
+
+#buttonthema a {
+  border: 0.5px solid var(--thema);
+  border-radius: 4px;
+  padding: 2px;
+  font-size: 10px;
+  transition: background 0.2s;
+}
+#buttonthema a:hover {
+  background: var(--surface-color-hover);
+  border: 1px solid grey;
+}
+#buttoncolor {
+  display: inline-block;
+}
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
+}
