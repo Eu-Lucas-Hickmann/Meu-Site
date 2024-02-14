@@ -104,31 +104,36 @@ ul li a:hover {
 #sociallinks a:hover {
   background: var(--highlight-collor);
 }
+#buttoncolor {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-radius: 100%;
+}
 #buttonthema {
   display: flex;
   justify-content: end;
-  text-align: end;
   padding: 5px;
   margin: 15px;
 }
 
 #buttonthema span {
+  display: flex;
   margin: 10px;
   padding: 2px;
   transition: background 0.2s;
   background: var(--surface-color);
   border: 0.5px solid var(--highlight-collor);
-  border-radius: 25%;
+  border-radius: 30%;
   cursor: pointer;
 }
-
 #buttonthema span:hover {
   background: var(--surface-color-hover);
   border: solid grey;
 }
 
 @media (min-width: 700px) {
-  body{
+  body {
     height: 100vh;
   }
   :root {
