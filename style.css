@@ -25,7 +25,6 @@
 }
 body {
   background: var(--bg-url) no-repeat top center/cover;
-  height: 100vh;
 }
 body * {
   font-family: "Source Code Pro", monospace;
@@ -129,6 +128,9 @@ ul li a:hover {
 }
 
 @media (min-width: 700px) {
+  body{
+    height: 100vh;
+  }
   :root {
     --bg-url: url(./assets/bg-desktop.jpg);
   }
