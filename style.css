@@ -87,6 +87,11 @@ ul li a:hover {
   background: var(--surface-color-hover);
   border: 1.5px solid grey;
 }
+#social {
+  display: flex;
+  justify-content: center;
+}
+
 #sociallinks {
   display: flex;
   padding: 24px 0px;
